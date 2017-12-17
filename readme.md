@@ -22,6 +22,4 @@ We will be using [Glitch](https://glitch.com)
 
 I would also like to upload this to Heroku. Since that was the original intent and still part of the [User Story](https://www.freecodecamp.org/challenges/url-shortener-microservice). Time-Stamp: 1:11 AM 2017-12-17
 
-* 
-
-Locally, it will run @ http://localhost:8080/
+* Locally, it will run @ http://localhost:8080/
