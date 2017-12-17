@@ -9,79 +9,82 @@
     padding: 16px 7px 7px 7px;
     background-color: #efefef;
     border-radius: 2px;
-    -webkit-box-shadow: 
-      0 2px 2px 0 rgba(0, 0, 0, .14),
-      0 3px 1px -2px rgba(0, 0, 0, .2), 
-      0 1px 5px 0 rgba(0, 0, 0, .12);
-            box-shadow: 
-      0 2px 2px 0 rgba(0, 0, 0, .14),
-      0 3px 1px -2px rgba(0, 0, 0, .2), 
-      0 1px 5px 0 rgba(0, 0, 0, .12);
-  }
-  
-  /* See keycap sizing: https://deskthority.net/wiki/Keycap_size_by_keyboard */
-  /* Standard 1u key */
-  .keyboard__key {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* See keycap sizing: https://deskthority.net/wiki/Keycap_size_by_keyboard */
+/* Standard 1u key */
+.keyboard__key {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     grid-column: span 4;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
     height: 35px;
     background-color: #dedede;
-    background-image: 
-      -webkit-gradient(linear, left top, right bottom, from(#dedede), to(rgb(202, 202, 202)));
-    background-image: 
-      linear-gradient(to bottom right, #dedede, rgb(202, 202, 202));
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(#dedede),
+        to(rgb(202, 202, 202))
+    );
+    background-image: linear-gradient(
+        to bottom right,
+        #dedede,
+        rgb(202, 202, 202)
+    );
     border-radius: 2px;
-  }
-  /* Printed text on keycap */
-  .keyboard__key::before {
-      content: attr(data-key-text);
-      z-index: 1;
-      font-family: "Arial";
-      font-size: 11px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #000000;
-      opacity: 0.65;
-      white-space: nowrap;
-    }
-  /* Top of key */
-  .keyboard__key::after {
-      content: '';
-      position: absolute;
-      top: 4px;
-      right: 5px;
-      bottom: 4px;
-      left: 5px;
-      display: block;
-      width: auto;
-      height: 27px;
-      background-color: inherit;
-      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.05" intercept="-0.025000000000000022" /><feFuncG type="linear" slope="1.05" intercept="-0.025000000000000022" /><feFuncB type="linear" slope="1.05" intercept="-0.025000000000000022" /></feComponentTransfer></filter></svg>#filter');
-      -webkit-filter: contrast(105%);
-              filter: contrast(105%);
-      border-radius: 4px;
-    }
-  
+}
+
+/* Printed text on keycap */
+.keyboard__key::before {
+    content: attr(data-key-text);
+    z-index: 1;
+    font-family: "Arial";
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.65;
+    white-space: nowrap;
+}
+/* Top of key */
+.keyboard__key::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    bottom: 4px;
+    left: 5px;
+    display: block;
+    width: auto;
+    height: 27px;
+    background-color: inherit;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.05" intercept="-0.025000000000000022" /><feFuncG type="linear" slope="1.05" intercept="-0.025000000000000022" /><feFuncB type="linear" slope="1.05" intercept="-0.025000000000000022" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter: contrast(105%);
+    filter: contrast(105%);
+    border-radius: 4px;
+}
+
   /* Keycap sizes */
   /* 1.25u key */
-  .keyboard__key--1-25u {
+.keyboard__key--1-25u {
     grid-column: span 5;
-  }
-  
-  /* 1.5u key */
-  .keyboard__key--1-5u {
+}
+
+/* 1.5u key */
+.keyboard__key--1-5u {
     grid-column: span 6;
-  }
-  
+}
+
   /* 1.75u key */
   .keyboard__key--1-75u {
     grid-column: span 7;
@@ -116,32 +119,55 @@
   /* Modifier keys */
   .keyboard__key--modifier {
     background-color: #cccccc;
-    background-image: 
-      -webkit-gradient(linear, left top, right bottom, from(#cccccc), to(rgb(185, 185, 185)));
-    background-image: 
-      linear-gradient(to bottom right, #cccccc, rgb(185, 185, 185));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#cccccc),
+      to(rgb(185, 185, 185))
+    );
+    background-image: linear-gradient(
+      to bottom right,
+      #cccccc,
+      rgb(185, 185, 185)
+    );
   }
   .keyboard__key--modifier::before {
-      font-size: 8px;
-    }
+    font-size: 8px;
+  }
   
   /* Enter key */
   .keyboard__key--enter {
     background-color: #71b0f1;
-    background-image: 
-      -webkit-gradient(linear, left top, right bottom, from(#71b0f1), to(rgb(112, 164, 217)));
-    background-image: 
-      linear-gradient(to bottom right, #71b0f1, rgb(112, 164, 217));
-    
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#71b0f1),
+      to(rgb(112, 164, 217))
+    );
+    background-image: linear-gradient(
+      to bottom right,
+      #71b0f1,
+      rgb(112, 164, 217)
+    );
   }
   
   /* Escape key */
   .keyboard__key--escape {
     background-color: #db6767;
-    background-image: 
-      -webkit-gradient(linear, left top, right bottom, from(#db6767), to(rgb(194, 102, 102)));
-    background-image: 
-      linear-gradient(to bottom right, #db6767, rgb(194, 102, 102));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#db6767),
+      to(rgb(194, 102, 102))
+    );
+    background-image: linear-gradient(
+      to bottom right,
+      #db6767,
+      rgb(194, 102, 102)
+    );
   }
   
   /* Body styling */
@@ -150,16 +176,19 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100vh;
-    background-image: 
-      -webkit-gradient(linear, left top, right bottom, from(#000000), to(#545454));
-    background-image: 
-      linear-gradient(to bottom right, #000000, #545454);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(#000000),
+        to(#545454)
+    );
+    background-image: linear-gradient(to bottom right, #000000, #545454);
   }
-
   
