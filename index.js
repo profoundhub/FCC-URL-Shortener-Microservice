@@ -27,12 +27,10 @@ app.get('/new/:url(*)',function(req,res){
 // ... 
 app.get('/new/:url(*)',function(req,res){
 
-    */
+*/
 
-    // listen  
+// listen  
 
 app.listen(port, ()=> {
     console.log('Everything is ok');
-})
-
-// } ?
+});
