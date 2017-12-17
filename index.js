@@ -11,6 +11,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+// Help Node to find and display our Front End HTML, CSS & other JS!
+app.use(express.static(__dirname + 'public'));
+
 app.get('/new/:url(*)', (req, res, next) => {
 
     // ES5
@@ -18,7 +21,7 @@ app.get('/new/:url(*)', (req, res, next) => {
 
     // ES6
     let { url } = req.params;
-
+    // return console.log('output: ', url );
 });
 
 // Front End
