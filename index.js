@@ -1,15 +1,10 @@
 const express  = require("express");
-
-// const app = server();
-
-const cors = require("cors");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
-
-const mongoose = require("mongoose"); // let mongo = require("mongodb").MongoClient;
-
 const port = process.env.PORT || 8080;
+const mongoose = require("mongoose"); // let mongo = require("mongodb").MongoClient;
 const dbUri = "mongodb://shortenuri:HishorturlsDB#users#datax:@ds159856.mlab.com:59856/shorturls";
 
 const app = express();
