@@ -22,7 +22,11 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+./privates
+./private
 .privates
+*.help
+*.db
 
 # OSX
 # =========================
