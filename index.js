@@ -7,6 +7,10 @@ let port = process.env.PORT || 8080;
 let dbUri = ""
 let app = express();
 
+app.use('/',express.static('public'));
+
+// app.use('/',express.static('public'));
+
 // ... 
 
 app.listen(port,function(){
