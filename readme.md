@@ -13,3 +13,11 @@ The source code can be located in my GitHub Repo: https://github.com/profoundhub
 ### Update: 
 
 We will be using [Glitch](https://glitch.com)
+
+re: #7 === Pro Tip: Checkout this wiki article for tips on integrating MongoDB on Glitch.
+
+### Idea:
+
+I would also like to upload this to Heroku. Since that was the original intent and still part of the [User Story](https://www.freecodecamp.org/challenges/url-shortener-microservice). Time-Stamp: 1:11 AM 2017-12-17
+
+
