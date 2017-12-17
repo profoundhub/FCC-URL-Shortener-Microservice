@@ -11,6 +11,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/new/:url(*)', (req, res, next) => {
+
+    
+}
+
 /*
 app.use('/',express.static('public'));
 
