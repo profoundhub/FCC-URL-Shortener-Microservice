@@ -1,15 +1,21 @@
 {
   "name": "fcc-url-shortener-microservice",
+  "dependencies": {
+		"express": "^4.14.0"
+	},
   "version": "1.0.0",
   "description": "This website was created for the Free Code Camp (FCC) Back End API URL Shortener Microservice Project (BaseJump).",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/profoundhub/FCC-URL-Shortener-Microservice.git"
   },
+  "engines": {
+		"node": "4.4.5"
+	},
   "author": "Daniel Lim",
   "license": "ISC",
   "bugs": {
