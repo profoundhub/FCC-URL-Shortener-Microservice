@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Help Node to find and display our Front End HTML, CSS & other JS!
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/new/:url(*)', (req, res, next) => {
 
