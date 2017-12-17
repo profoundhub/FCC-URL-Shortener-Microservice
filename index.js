@@ -14,11 +14,14 @@ app.use(cors());
 app.get('/new/:url(*)', (req, res, next) => {
 
     // ES5
+    // var url = req.params.url;
 
     // ES6
     let { url } = req.params;
 
 });
+
+// Front End
 
 /*
 app.use('/',express.static('public'));
