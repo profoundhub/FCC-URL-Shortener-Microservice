@@ -3,7 +3,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "nodemon": "^1.13.3"
   },
   "version": "1.0.0",
   "description": "This website was created for the Free Code Camp (FCC) Back End API URL Shortener Microservice Project (BaseJump).",
