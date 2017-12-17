@@ -13,8 +13,12 @@ app.use(cors());
 
 app.get('/new/:url(*)', (req, res, next) => {
 
-    
-}
+    // ES5
+
+    // ES6
+    let { url } = req.params;
+
+});
 
 /*
 app.use('/',express.static('public'));
