@@ -135,43 +135,43 @@
   .keyboard__key--modifier::before {
     font-size: 8px;
   }
-  
-  /* Enter key */
-  .keyboard__key--enter {
+
+/* Enter key */
+.keyboard__key--enter {
     background-color: #71b0f1;
     background-image: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(#71b0f1),
-      to(rgb(112, 164, 217))
+        linear,
+        left top,
+        right bottom,
+        from(#71b0f1),
+        to(rgb(112, 164, 217))
     );
     background-image: linear-gradient(
-      to bottom right,
-      #71b0f1,
-      rgb(112, 164, 217)
+        to bottom right,
+        #71b0f1,
+        rgb(112, 164, 217)
     );
-  }
-  
-  /* Escape key */
-  .keyboard__key--escape {
+}
+
+/* Escape key */
+.keyboard__key--escape {
     background-color: #db6767;
     background-image: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(#db6767),
-      to(rgb(194, 102, 102))
+        linear,
+        left top,
+        right bottom,
+        from(#db6767),
+        to(rgb(194, 102, 102))
     );
     background-image: linear-gradient(
-      to bottom right,
-      #db6767,
-      rgb(194, 102, 102)
+        to bottom right,
+        #db6767,
+        rgb(194, 102, 102)
     );
-  }
-  
-  /* Body styling */
-  body {
+}
+
+/* Body styling */
+body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -190,5 +190,4 @@
         to(#545454)
     );
     background-image: linear-gradient(to bottom right, #000000, #545454);
-  }
-  
+}
