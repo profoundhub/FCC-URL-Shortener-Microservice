@@ -7,4 +7,10 @@ let port = process.env.PORT || 8080;
 let dbUri = ""
 let app = express();
 
+// ... 
 
+app.listen(port,function(){
+    console.log('everything is ok');
+})
+
+// } ?
